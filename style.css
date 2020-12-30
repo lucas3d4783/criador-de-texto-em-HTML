@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: 60px;
+    background-color: rgba(0, 34, 60, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
