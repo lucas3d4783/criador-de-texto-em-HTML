@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+
     <title>Criador de HTML</title>
 </head>
 <body>
@@ -17,10 +20,21 @@
         </div>
         <div class="container-textarea">
             <div class="buttons">
-                <button class="btn" onclick="preview();">Visualizar</button>
-                <button class="btn" onclick="negrito();"><b>B</b></button>
-                <button class="btn" onclick="italico();"><i>I</i></button>
-                <button class="btn" onclick="h2();"><h2>T</h2></button>
+
+                <a class="btn margin-left-right-3" alt="Visualizar" href="javascript:preview()"><img src="img/icons/visualizar.png" alt="Visualizar Resultado"></a>
+                
+                <div class="btn-group">
+                    <a class="btn margin-left-right-3" alt="Visualizar" href="javascript:negrito()"><b>N</b></a> 
+                    <a class="btn margin-left-right-3" alt="Visualizar" href="javascript:italico()"><i>I</i></a>   
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn" alt="Visualizar" href="javascript:h3()"><h3>T</h3></a> 
+                    <a class="btn" alt="Visualizar" href="javascript:h2()"><h2>T</h2></a> 
+                    <a class="btn" alt="Visualizar" href="javascript:h1()"><h1>T</h1></a>                
+                </div>
+                
+
             </div>
             <textarea placeholder="" class="textarea" id="textarea"></textarea>
         </div>
