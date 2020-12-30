@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Criador de HTML</title>
 </head>
 <body>
 
     <div class="main">
-
-        <div class="container-result">
-            <span class="result" id="result"></span>
+        <div id="container-result" class="container-result">
+            <pre>
+                <span class="result" id="result"></span>
+            </pre>
+            
         </div>
-        
         <div class="container-textarea">
             <div class="buttons">
                 <button class="btn" onclick="preview();">Visualizar</button>
-                <button class="btn" onclick="negrito();"><b>Negrito</b></button>
-                <button class="btn" onclick="italico();"><i>Itálico</i></button>
+                <button class="btn" onclick="negrito();"><b>B</b></button>
+                <button class="btn" onclick="italico();"><i>I</i></button>
+                <button class="btn" onclick="h2();"><h2>T</h2></button>
             </div>
-            <textarea placeholder="Crie seu texto personalizado nesse campo" class="textarea" id="textarea"></textarea>
+            <textarea placeholder="" class="textarea" id="textarea"></textarea>
         </div>
         
     </div>
