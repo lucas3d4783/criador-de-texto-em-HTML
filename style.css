@@ -19,6 +19,7 @@ body {
     display: none;
     width: 100%;
     height: auto;
+    max-height: 250px;
     color: black;
     background-color: rgba(240, 248, 255, 0.825);
     margin-top: 5px;
@@ -28,6 +29,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: justify;
+    overflow-y:scroll;
 }
 
 pre {
@@ -121,5 +123,9 @@ pre {
 }
 
 .text-center{
+    text-align: center;
+}
+
+.text-justify{
     text-align: center;
 }
