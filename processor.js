@@ -2,8 +2,6 @@
 function preview(){ // transformar seleção em Negrito
     var ta = document.getElementById("textarea"); 
 
-    console.log(ta.value);
-
     if(ta.value != ""){
         document.getElementById('container-result').style.display = 'block';
         document.getElementById('result').innerHTML = ta.value;
@@ -91,7 +89,7 @@ function toUpperCase(){
     if(ta.value.substring(ta.selectionStart, ta.selectionEnd) != ""){ // varifica se foi digitado algo
         ta.value = ta.value.substring(0, ta.selectionStart) + value.toUpperCase() +
         ta.value.substring(ta.selectionEnd);
-        console.log(message);
+        console.log("Valor passado para caixa baixa");
     }else{
         console.log('Nenhum valor selecionado');
     }
@@ -111,7 +109,7 @@ function toLowerCase(){
     if(ta.value.substring(ta.selectionStart, ta.selectionEnd) != ""){ // varifica se foi digitado algo
         ta.value = ta.value.substring(0, ta.selectionStart) + value.toLowerCase() +
         ta.value.substring(ta.selectionEnd);
-        console.log(message);
+        console.log("Valor passado para caixa baixa");
     }else{
         console.log('Nenhum valor selecionado');
     }
