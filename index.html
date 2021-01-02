@@ -20,18 +20,27 @@
         <div class="container-textarea">
             <div class="buttons">
 
-                <a class="btn margin-left-right-3" alt="Visualizar" href="javascript:preview()"><img src="img/icons/visualizar.png" alt="Visualizar Resultado"></a>
+                <a class="btn margin-left-right-3" title="Visualizar" href="javascript:preview()"><img src="img/icons/visualizar.png"></a>
                 
                 <div class="btn-group">
-                    <a class="btn margin-left-right-3" alt="Visualizar" href="javascript:negrito()"><b>N</b></a> 
-                    <a class="btn margin-left-right-3" alt="Visualizar" href="javascript:italico()"><i>I</i></a>   
+                    <a class="btn margin-left-right-3" title="Negrito" href="javascript:negrito()"><b>N</b></a> 
+                    <a class="btn margin-left-right-3" title="Itálico" href="javascript:italico()"><i>I</i></a>   
                 </div>
 
                 <div class="btn-group">
-                    <a class="btn" alt="Visualizar" href="javascript:h3()"><h3>T</h3></a> 
-                    <a class="btn" alt="Visualizar" href="javascript:h2()"><h2>T</h2></a> 
-                    <a class="btn" alt="Visualizar" href="javascript:h1()"><h1>T</h1></a>                
+                    <a class="btn" title="Título 3" href="javascript:h3()"><h3>T</h3></a> 
+                    <a class="btn" title="Título 2" href="javascript:h2()"><h2>T</h2></a> 
+                    <a class="btn" title="Título 1" href="javascript:h1()"><h1>T</h1></a>                
                 </div>
+
+                <div class="btn-group">
+                    <a class="btn margin-left-right-3" title="Alinhar o texto à esquerda" href=""><img src="img/icons/align-left.png"></a>
+                    <a class="btn margin-left-right-3" title="Alinhar o texto no centro" href=""><img src="img/icons/align-center.png"></a>
+                    <a class="btn margin-left-right-3" title="Alinhar o texto à direita" href=""><img src="img/icons/align-right.png"></a>
+                    <a class="btn margin-left-right-3" title="Justificar o texto" href=""><img src="img/icons/align-justify.png"></a>
+                </div>
+
+
             </div>
 
             <textarea onkeyup="preview()" class="textarea" id="textarea"></textarea>

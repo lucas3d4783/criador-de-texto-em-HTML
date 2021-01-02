@@ -127,5 +127,13 @@ pre {
 }
 
 .text-justify{
-    text-align: center;
+    text-align: justify;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
 }
