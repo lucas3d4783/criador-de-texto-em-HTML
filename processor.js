@@ -79,5 +79,46 @@ function textjustify(){ // Justificando o texto
     concatenar('<div class="text-justify">','</div>', 'Justificando texto');
 }
 
+function toUpperCase(){
+    var ta = document.querySelector("textarea"); 
+    
+    console.log("Posição inicial selecionada: " + ta.selectionStart);
+    console.log("Posição final selecionada: " + ta.selectionEnd);
+
+    var value = ta.value.substring(ta.selectionStart, ta.selectionEnd);
+    console.log("Valor selecionado: " + value);
+
+    if(ta.value.substring(ta.selectionStart, ta.selectionEnd) != ""){ // varifica se foi digitado algo
+        ta.value = ta.value.substring(0, ta.selectionStart) + value.toUpperCase() +
+        ta.value.substring(ta.selectionEnd);
+        console.log(message);
+    }else{
+        console.log('Nenhum valor selecionado');
+    }
+
+    preview();
+}
+
+function toLowerCase(){
+    var ta = document.querySelector("textarea"); 
+    
+    console.log("Posição inicial selecionada: " + ta.selectionStart);
+    console.log("Posição final selecionada: " + ta.selectionEnd);
+
+    var value = ta.value.substring(ta.selectionStart, ta.selectionEnd);
+    console.log("Valor selecionado: " + value);
+
+    if(ta.value.substring(ta.selectionStart, ta.selectionEnd) != ""){ // varifica se foi digitado algo
+        ta.value = ta.value.substring(0, ta.selectionStart) + value.toLowerCase() +
+        ta.value.substring(ta.selectionEnd);
+        console.log(message);
+    }else{
+        console.log('Nenhum valor selecionado');
+    }
+
+    preview();
+}
+
+
 // adicionar campo para pegar imagem do computador e adicionar a URL no campo de texto, depois essa imagem deve subir para o servidor
 
