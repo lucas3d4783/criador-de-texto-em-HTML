@@ -12,6 +12,9 @@ function preview(){ // transformar seleção em Negrito
         console.log('Texto enviado para visualização');
     }else{
         console.log('Nenhum valor encontrado na caixa de texto');
+        document.getElementById('container-result').style.display = 'block';
+        document.getElementById('result').innerHTML = "<div class='text-center'><b>Que a Força esteja com você.</b></div>";
+
     }
 }
 
